@@ -1,0 +1,40 @@
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  overflow: hidden;
+  backdrop-filter: blur(12px);
+  transition: border-color 0.2s, box-shadow 0.2s;
+  animation: fade-in 0.3s ease both;
+}
+
+.card:hover {
+  border-color: var(--border-bright);
+}
+
+.card[data-accent='blue']   { box-shadow: 0 0 0 0 var(--blue-glow); border-top: 2px solid var(--blue); }
+.card[data-accent='green']  { box-shadow: 0 0 0 0 var(--green-glow); border-top: 2px solid var(--green); }
+.card[data-accent='purple'] { box-shadow: 0 0 0 0 var(--purple-glow); border-top: 2px solid var(--purple); }
+.card[data-accent='yellow'] { box-shadow: 0 0 0 0 var(--yellow-glow); border-top: 2px solid var(--yellow); }
+.card[data-accent='cyan']   { box-shadow: 0 0 0 0 var(--cyan-glow); border-top: 2px solid var(--cyan); }
+.card[data-accent='red']    { box-shadow: 0 0 0 0 var(--red-glow); border-top: 2px solid var(--red); }
+
+.card[data-accent='blue']:hover   { box-shadow: 0 4px 32px var(--blue-glow); }
+.card[data-accent='green']:hover  { box-shadow: 0 4px 32px var(--green-glow); }
+.card[data-accent='purple']:hover { box-shadow: 0 4px 32px var(--purple-glow); }
+.card[data-accent='yellow']:hover { box-shadow: 0 4px 32px var(--yellow-glow); }
+.card[data-accent='cyan']:hover   { box-shadow: 0 4px 32px var(--cyan-glow); }
+.card[data-accent='red']:hover    { box-shadow: 0 4px 32px var(--red-glow); }
+
+.title {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  padding: 16px 18px 0;
+}
+
+.body {
+  padding: 10px 18px 18px;
+}

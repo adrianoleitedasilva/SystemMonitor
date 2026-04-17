@@ -1,0 +1,26 @@
+# Scripts de inicialização Windows
+*.bat
+
+# Dependências Node.js
+node_modules/
+frontend/node_modules/
+
+# Ambiente virtual Python
+backend/venv/
+
+# Cache Python
+__pycache__/
+*.py[cod]
+
+# Logs
+logs/
+*.log
+
+# Build do frontend
+frontend/dist/
+frontend/.vite/
+
+# Variáveis de ambiente
+.env
+.env.local
+.env.*.local
